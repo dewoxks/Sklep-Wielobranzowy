@@ -1,4 +1,4 @@
-package SklepWielobranżowy.model;
+package SklepWielobranzowy.model;
 
 public class ZgloszenieZamowienia {
 }
