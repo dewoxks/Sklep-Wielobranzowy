@@ -1,4 +1,4 @@
-package SklepWielobranzowy.enumy;
+package SklepWielobranzowy.model;
 
 enum StatusZamowienia {
     NOWE,
