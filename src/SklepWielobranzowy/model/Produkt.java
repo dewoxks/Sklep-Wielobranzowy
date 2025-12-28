@@ -1,36 +1,36 @@
 package SklepWielobranzowy.model;
 
-import SklepWielobranzowy.model.TypProduktu;
-
-public class Produkt{
-    private String numerProduktu;
+public class Produkt {
     private String nazwa;
-    private TypProduktu typProduktu;
+    private TypProduktu typ;
     private double cena;
     private int stanMagazynowy;
 
-    public Produkt(String numerProduktu, String nazwa, TypProduktu typProduktu, double cena, int stanMagazynowy) {
-        this.numerProduktu = numerProduktu;
+    public Produkt(String nazwa, TypProduktu typ, double cena, int stanMagazynowy) {
         this.nazwa = nazwa;
-        this.typProduktu = typProduktu;
+        this.typ = typ;
         this.cena = cena;
         this.stanMagazynowy = stanMagazynowy;
     }
-    public double getCena() {
-        return cena;
-}
 
-    @Override
+    public String getNazwa() { return nazwa; }
+    public TypProduktu getTyp() { return typ; }
+    public double getCena() { return cena; }
+    public int getStanMagazynowy() { return stanMagazynowy; }
+
+    public void dodajDoMagazynu(int ilosc) {
+        this.stanMagazynowy += ilosc;
+    }
+
+    public boolean odejmijZMagazynu(int ilosc) {
+        if (stanMagazynowy >= ilosc) {
+            stanMagazynowy -= ilosc;
+            return true;
+        }
+        return false;
+    }
+
     public String toString() {
-        return "Produkt{" +
-                "numerProduktu='" + numerProduktu + '\'' +
-                ", nazwa='" + nazwa + '\'' +
-                ", typProduktu=" + typProduktu +
-                ", cena=" + cena +
-                ", stanMagazynowy=" + stanMagazynowy +
-                '}';
+        return nazwa + " (" + typ + ") - " + cena + " zł [Stan: " + stanMagazynowy + "]";
     }
 }
-
-
-
