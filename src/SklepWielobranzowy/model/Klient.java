@@ -13,13 +13,12 @@ public class Klient {
         this.adres = adres;
     }
 
-    @Override
+    public String getImie() { return imie; }
+    public String getNazwisko() { return nazwisko; }
+    public String getNumerKlienta() { return numerKlienta; }
+    public String getAdres() { return adres; }
+
     public String toString() {
-        return "Klient{" +
-                "imie='" + imie + '\'' +
-                ", nazwisko='" + nazwisko + '\'' +
-                ", numerKlienta='" + numerKlienta + '\'' +
-                ", adres='" + adres + '\'' +
-                '}';
+        return imie + " " + nazwisko + " (ID: " + numerKlienta + ")";
     }
 }

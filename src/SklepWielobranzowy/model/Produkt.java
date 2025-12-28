@@ -13,21 +13,10 @@ public class Produkt {
         this.stanMagazynowy = stanMagazynowy;
     }
 
-    public String getNazwa() {
-        return nazwa;
-    }
-
-    public TypProduktu getTyp() {
-        return typ;
-    }
-
-    public double getCena() {
-        return cena;
-    }
-
-    public int getStanMagazynowy() {
-        return stanMagazynowy;
-    }
+    public String getNazwa() { return nazwa; }
+    public TypProduktu getTyp() { return typ; }
+    public double getCena() { return cena; }
+    public int getStanMagazynowy() { return stanMagazynowy; }
 
     public void dodajDoMagazynu(int ilosc) {
         this.stanMagazynowy += ilosc;
@@ -41,9 +30,7 @@ public class Produkt {
         return false;
     }
 
-
     public String toString() {
         return nazwa + " (" + typ + ") - " + cena + " zł [Stan: " + stanMagazynowy + "]";
     }
-}
->.
+}1
