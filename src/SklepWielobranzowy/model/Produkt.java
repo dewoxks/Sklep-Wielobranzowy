@@ -46,3 +46,4 @@ public class Produkt {
         return nazwa + " (" + typ + ") - " + cena + " zł [Stan: " + stanMagazynowy + "]";
     }
 }
+>.
