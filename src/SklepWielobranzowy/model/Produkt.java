@@ -30,6 +30,7 @@ public class Produkt {
         return false;
     }
 
+
     public String toString() {
         return nazwa + " (" + typ + ") - " + cena + " zł [Stan: " + stanMagazynowy + "]";
     }
