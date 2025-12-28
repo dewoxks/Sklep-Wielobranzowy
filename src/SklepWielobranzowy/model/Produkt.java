@@ -33,4 +33,4 @@ public class Produkt {
     public String toString() {
         return nazwa + " (" + typ + ") - " + cena + " zł [Stan: " + stanMagazynowy + "]";
     }
-}1
+}
