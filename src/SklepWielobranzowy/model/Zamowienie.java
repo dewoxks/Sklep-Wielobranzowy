@@ -40,4 +40,4 @@ public class Zamowienie {
         return "Zamówienie: " + klient.getNumerKlienta() + " | Data: " + dataZamowienia +
                 " | Kwota: " + lacznaKwota + " zł | Status: " + status;
     }
-}
+} .
